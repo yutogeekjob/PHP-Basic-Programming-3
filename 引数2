@@ -1,0 +1,12 @@
+<?php
+function a($a,$b=5,$type=false){
+    $op=$a*$b;
+    if($type==false){
+        echo $op;
+        
+    }else{
+        echo $op*$op;
+    }
+}
+a(2,4,true);
+?>
