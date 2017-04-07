@@ -1,0 +1,21 @@
+<?php
+function prof(){
+    $a=array(1,"由比ヶ浜結衣","19940618","千葉県");
+    $b=array(2,"雪ノ下雪乃","19950103","千葉県");
+    $c=array(3,"金子優斗","19950316","愛知県");
+    $id=mt_rand(1,3);
+    if($id==1){
+        return $a;
+    }
+    elseif ($id==2){
+        return $b;
+    }
+    elseif($id==3){
+        return $c;
+    }
+}
+$op=prof();
+for($i=0;$i<count($op);$i+=1){
+    echo "{$op[$i]} ";
+}
+?>
