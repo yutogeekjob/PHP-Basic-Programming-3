@@ -1,8 +1,8 @@
 <?php
 function prof($id){
-    $a=array(1,"由比ヶ浜結衣","19940618","千葉県");
-    $b=array(2,"雪ノ下雪乃","19950103",null);
-    $c=array(3,"金子優斗","19950316","愛知県");
+    $a=array("id 1","由比ヶ浜結衣","19940618","千葉県");
+    $b=array("id 2","雪ノ下雪乃","19950103","千葉県");
+    $c=array("id 3","金子優斗","19950316","愛知県");
     
     if($id==1){
         return $a;
@@ -22,11 +22,13 @@ $roop=array(1,2,3);
 foreach($roop as $i){
 $op=prof($i);
 foreach($op as $i){
-    if($i==null){
+    if(strstr($i,"県")!=false){
       continue;
-    }else{
+    }
+    else if(strstr($i,"id")!=false){
+      continue;
+    }
+    else{
     echo $i." ";
     }
    }
-}
-?>
