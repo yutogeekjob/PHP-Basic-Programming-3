@@ -1,10 +1,12 @@
 <?php
-function prof(){
-    echo "湘南美容外科クリニックのドクターの金子です。\n";
-    echo "1995年3月16日生まれの22歳です\n";
-    echo "好きな言葉は情熱です。\n";
+<?php
+function check($i){
+    if($i%2==0){
+        echo "{$i}は偶数です！";
+    }
+    else{
+        echo "{$i}は奇数です！";
+    }
 }
-for($i=0;$i<10;$i++){
-    prof();
-}
+check(30);
 ?>
