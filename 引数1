@@ -1,5 +1,4 @@
 <?php
-<?php
 function check($i){
     if($i%2==0){
         echo "{$i}は偶数です！";
